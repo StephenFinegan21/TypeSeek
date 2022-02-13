@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&family=Lora&display=swap');
+
+
+
+.page-container{
+  background-color: #FAFAFA;
+}
+.LibreFranklin{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2rem;
+
+}
+
+.post-description{
+   
+    font-family: 'Lora', serif;
+}
+
+.typeSeek-heading{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 9rem;
+    padding-top: 10%;
+    text-align: center;
+}
+
+
+
+  
+  .text-loop-container {
+    
+    width: 120vw;
+    margin-top: 20%;
+    overflow-x: hidden;
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
+
+  }
+  
+  .text-loop {
+    width: 120%;
+    display: flex;
+    justify-content: space-evenly;
+
+    h3{
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 1rem;
+        padding-left: 10%;
+        height: 80px;
+        line-height: 80px;
+       
+      
+        
+    }
+
+  }
+
+  .post-item{
+    width: 100%;
+    background-color: aqua;
+    height: fit-content;
+
+  }
+
