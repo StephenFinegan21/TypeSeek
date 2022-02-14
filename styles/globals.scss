@@ -7,16 +7,15 @@
 
 $darkcolor:  rgb(38, 54, 62);
 
+$medium: 900px;
+$large: 1500px;
+
 .page-container{
   
   width: 100%;
   margin: auto;
 }
-.LibreFranklin{
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 2rem;
 
-}
 
 .post-description{
    
@@ -25,9 +24,14 @@ $darkcolor:  rgb(38, 54, 62);
 
 .typeSeek-heading{
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 9rem;
-    padding-top: 10%;
+    font-size: 4rem;
+    padding-top: 30%;
     text-align: center;
+
+    @media screen and (min-width: $medium) {
+      font-size: 9rem;
+      padding-top: 10%;
+  }
     
 }
 
@@ -53,12 +57,14 @@ $darkcolor:  rgb(38, 54, 62);
         font-family: 'Libre Franklin', sans-serif;
         font-size: 1rem;
         padding-left: 10%;
-        height: 80px;
+        height: 50px;
+        line-height: 50px;
+
+        @media screen and (min-width: $medium) {
+          height: 80px;
         line-height: 80px;
-       
-      
-        
-    }
+      }
+       }
 
   }
 
