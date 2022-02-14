@@ -5,10 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&family=Lora&display=swap');
 
-
+$darkcolor:  rgb(38, 54, 62);
 
 .page-container{
-  background-color: #FAFAFA;
+  
+  width: 100%;
+  margin: auto;
 }
 .LibreFranklin{
     font-family: 'Libre Franklin', sans-serif;
@@ -26,6 +28,7 @@
     font-size: 9rem;
     padding-top: 10%;
     text-align: center;
+    
 }
 
 
@@ -60,9 +63,16 @@
   }
 
   .post-item{
-    width: 100%;
-    background-color: aqua;
+    
+    margin: auto;
     height: fit-content;
+    background-color: aqua;
+    transition: ease-in 0.3s;
 
+  }
+
+  .post-item:hover{
+    transform: scale(1.05);
+    border: 2px solid rgb(189, 188, 177);
   }
 

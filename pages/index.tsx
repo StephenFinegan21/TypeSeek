@@ -3,6 +3,7 @@ import { Children } from 'react';
 import { getPosts } from '../services'
 import Post from '../components/Post'
 import  Header  from '../components/Header';
+import Footer from '../components/Footer'
 
 export default function Home( { posts }) {
 
@@ -15,7 +16,7 @@ export default function Home( { posts }) {
     <div className="page-container">
       <Header />
 
-      <main className="my-20 w-4/5 mx-auto grid grid-cols-1  md:grid-cols-3 gap-10  ">
+      <main className=" my-20 w-4/5 mx-auto grid grid-cols-1   md:grid-cols-3 gap-10     ">
       {posts.map((post, index) => (
             <Post   
               key={index}
@@ -23,6 +24,7 @@ export default function Home( { posts }) {
             />
           ))}
       </main>
+      <Footer />
     </div>
   )
 }
